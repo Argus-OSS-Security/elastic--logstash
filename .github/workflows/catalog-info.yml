@@ -1,13 +1,14 @@
 ---
 name: catalog-info
 
-on:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - 'catalog-info.yaml'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches:
+#       - main
+#     paths:
+#       - 'catalog-info.yaml'
+# 
 permissions:
   contents: read
 

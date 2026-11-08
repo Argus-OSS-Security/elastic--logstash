@@ -1,8 +1,9 @@
 name: Lint the docs!
-on:
-  pull_request:
-    branches: [ "main" ]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches: [ "main" ]
+# 
 permissions:
   pull-requests: write
   contents: read

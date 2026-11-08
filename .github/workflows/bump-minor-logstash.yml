@@ -4,36 +4,37 @@ name: bump-minor-logstash-version
 # branch, copy the previous minor's lock file onto it, and bump versions.yml on
 # the branch it was cut from. Pin review and dependency updates stay manual.
 
-on:
-  workflow_dispatch:
-    inputs:
-      logstash-version:
-        description: 'Release version for the new branch (example: 9.6.0)'
-        required: true
-        type: string
-      logstash-branch:
-        description: 'New release branch to create (example: 9.6)'
-        required: true
-        type: string
-      source-branch:
-        description: 'Branch the release branch is cut from and whose versions.yml is bumped to the next minor (example: main)'
-        required: false
-        default: main
-        type: string
-      next-minor-version:
-        description: 'Version source-branch moves to after the branch is cut (example: 9.7.0). Computed from logstash-version when omitted.'
-        required: false
-        type: string
-      previous-branch:
-        description: 'Branch to copy the baseline lock file from (example: 9.5). Computed from logstash-branch when omitted.'
-        required: false
-        type: string
-      skip-branch-creation:
-        description: 'Skip creating the release branch (last minor of a major).'
-        required: false
-        default: false
-        type: boolean
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       logstash-version:
+#         description: 'Release version for the new branch (example: 9.6.0)'
+#         required: true
+#         type: string
+#       logstash-branch:
+#         description: 'New release branch to create (example: 9.6)'
+#         required: true
+#         type: string
+#       source-branch:
+#         description: 'Branch the release branch is cut from and whose versions.yml is bumped to the next minor (example: main)'
+#         required: false
+#         default: main
+#         type: string
+#       next-minor-version:
+#         description: 'Version source-branch moves to after the branch is cut (example: 9.7.0). Computed from logstash-version when omitted.'
+#         required: false
+#         type: string
+#       previous-branch:
+#         description: 'Branch to copy the baseline lock file from (example: 9.5). Computed from logstash-branch when omitted.'
+#         required: false
+#         type: string
+#       skip-branch-creation:
+#         description: 'Skip creating the release branch (last minor of a major).'
+#         required: false
+#         default: false
+#         type: boolean
+# 
 permissions:
   contents: read
 

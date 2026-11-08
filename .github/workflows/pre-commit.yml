@@ -1,13 +1,14 @@
 name: pre-commit
 
-on:
-  pull_request:
-  push:
-    branches:
-      - main
-      - "8.19"
-      - 9.*
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#   push:
+#     branches:
+#       - main
+#       - "8.19"
+#       - 9.*
+# 
 permissions:
   contents: read
 

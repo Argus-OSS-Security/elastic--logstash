@@ -2,11 +2,12 @@ name: Observability Agentic Workflow — Schedule (frequent)
 
 # High-cadence schedule lane (every 15 minutes). Shares obs-aw-event-schedule.yml
 # with schedule-profile=frequent so daily autodoc/security stay off this cron.
-on:
-  schedule:
-    - cron: "*/15 * * * *"
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   schedule:
+#     - cron: "*/15 * * * *"
+#   workflow_dispatch:
+# 
 permissions:
   contents: read
 

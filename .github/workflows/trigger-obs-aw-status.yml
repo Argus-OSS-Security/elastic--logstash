@@ -1,8 +1,9 @@
 name: Observability Agentic Workflow — Status
 
-on:
-  status:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   status:
+# 
 permissions:
   contents: read
 

@@ -1,8 +1,9 @@
 name: docs-deploy
-on:
-  workflow_run:
-    workflows: [docs-build]
-    types: [completed]
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_run:
+#     workflows: [docs-build]
+#     types: [completed]
 permissions:
   contents: read
   deployments: write

@@ -1,9 +1,10 @@
 name: Add Logstash issue to Logstash Ingest Project
 
-on:
-  issues:
-    types:
-      - labeled
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issues:
+#     types:
+#       - labeled
 env:
   LOGSTASH_PROJECT_ID: 'PVT_kwDOAGc3Zs4AMlnl'
   

@@ -1,18 +1,19 @@
 name: Release Notes Draft generator
 
-on:
-  workflow_dispatch:
-    inputs:
-      branch:
-        type: string
-        required: true
-        default: "9.0"
-      last_release:
-        type: string
-        required: true
-        default: "9.0.0"
-
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       branch:
+#         type: string
+#         required: true
+#         default: "9.0"
+#       last_release:
+#         type: string
+#         required: true
+#         default: "9.0.0"
+# 
+# 
 permissions:
   contents: write
   pull-requests: write

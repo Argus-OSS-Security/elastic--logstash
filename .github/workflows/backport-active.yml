@@ -1,11 +1,12 @@
 name: Backport to active branches
 
-on:
-  pull_request_target:
-    types: [closed, labeled]
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_target:
+#     types: [closed, labeled]
+#     branches:
+#       - main
+# 
 permissions:
   pull-requests: write
   contents: read

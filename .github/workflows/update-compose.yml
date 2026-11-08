@@ -1,11 +1,12 @@
 ---
 name: update-compose
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 6 * * 1'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     - cron: '0 6 * * 1'
+# 
 permissions:
   contents: read
 

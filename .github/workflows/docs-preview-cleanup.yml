@@ -1,7 +1,8 @@
 name: docs-preview-cleanup
-on:
-  pull_request_target:
-    types: [closed]
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_target:
+#     types: [closed]
 permissions:
   contents: none
   deployments: write

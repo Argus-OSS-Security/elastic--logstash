@@ -2,11 +2,12 @@ name: Observability Agentic Workflow — Schedule (daily)
 
 # Second cadence lives in trigger-obs-aw-schedule-frequent.yml: GitHub does not
 # expose which cron fired when multiple expressions share one workflow file.
-on:
-  schedule:
-    - cron: "0 6 * * *"
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   schedule:
+#     - cron: "0 6 * * *"
+#   workflow_dispatch:
+# 
 permissions:
   contents: read
 

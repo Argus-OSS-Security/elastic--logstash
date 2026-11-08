@@ -1,20 +1,21 @@
 name: bump-logstash-version
 
-on:
-  workflow_dispatch:
-    inputs:
-      logstash-version:
-        description: 'Logstash version to update TO (example: 9.1.4)'
-        required: true
-        type: string
-      logstash-branch:
-        description: 'Logstash branch (example: 9.1)'
-        required: true
-        type: string
-      logstash-release-track:
-        description: 'Release track (example: 9.current, 9.previous, main). Optional; when omitted the release track in versions.yml is left unchanged.'
-        required: false
-        type: string
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       logstash-version:
+#         description: 'Logstash version to update TO (example: 9.1.4)'
+#         required: true
+#         type: string
+#       logstash-branch:
+#         description: 'Logstash branch (example: 9.1)'
+#         required: true
+#         type: string
+#       logstash-release-track:
+#         description: 'Release track (example: 9.current, 9.previous, main). Optional; when omitted the release track in versions.yml is left unchanged.'
+#         required: false
+#         type: string
 permissions:
   contents: read
 

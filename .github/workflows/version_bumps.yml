@@ -1,27 +1,28 @@
 name: Bump dependencies
-on:
-  workflow_dispatch:
-   inputs:
-      bump:
-        description: 'Bump type'     
-        required: true
-        default: 'patch' 
-        type: choice
-        options:
-        - "patch"
-        - "minor"
-        - "major"
-      extra_gems_minor:
-        description: 'Additional gems to bump at minor level (space-separated). AWS gems are always included automatically. Only used during patch runs.'
-        required: false
-        default: ''
-        type: string
-      extra_gems_major:
-        description: 'Gems to also bump at major level (space-separated). Used during patch or minor runs.'
-        required: false
-        default: ''
-        type: string
-    
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#    inputs:
+#       bump:
+#         description: 'Bump type'     
+#         required: true
+#         default: 'patch' 
+#         type: choice
+#         options:
+#         - "patch"
+#         - "minor"
+#         - "major"
+#       extra_gems_minor:
+#         description: 'Additional gems to bump at minor level (space-separated). AWS gems are always included automatically. Only used during patch runs.'
+#         required: false
+#         default: ''
+#         type: string
+#       extra_gems_major:
+#         description: 'Gems to also bump at major level (space-separated). Used during patch or minor runs.'
+#         required: false
+#         default: ''
+#         type: string
+#     
 permissions:
   pull-requests: write
   contents: write

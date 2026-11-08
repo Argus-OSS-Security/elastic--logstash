@@ -1,8 +1,9 @@
 name: openapi-lint
-on:
-  pull_request:
-    paths:
-      - 'docs/static/spec/openapi/logstash-api.yaml'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     paths:
+#       - 'docs/static/spec/openapi/logstash-api.yaml'
 permissions:
   contents: read
 jobs:
